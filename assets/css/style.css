@@ -173,7 +173,7 @@ nav .active, nav a:hover {
 
 .widget_title {
     margin-top: 24px;
-    margin-bottom: 0px;
+    margin-bottom: 16px;
 }
 
 .widget_title_text {
@@ -187,6 +187,10 @@ nav .active, nav a:hover {
     height: 2px;
     background-color: #36a9e1;
     margin-top: 8px;
+}
+
+.widget_body {
+    margin-top: 24px;
 }
 
 .news_data {
@@ -274,6 +278,8 @@ article .news_comments {
 
 .widget_body_phone img {
     margin-right: 8px;
+    width: 32px;
+    height: 32px;
 }
 
 .widget_body_phone strong {
@@ -318,7 +324,126 @@ article .news_comments {
     margin-right: 3px;
 }
 
-.footer {
-    background-color: #000;
-    
+footer {
+    background-color: #1e1e1e;
+    display: flex;
+    justify-content: center;
+}
+
+.footer_menu {
+    display: flex;
+}
+
+.footer_menu_1, .footer_menu_2, .footer_menu_3 {
+    flex: 1;
+    color: #fff;
+}
+
+.footer_menu_1 {
+    background-color: #39aae1;
+}
+
+.footer_menu_2 {
+    background-color: #0079c7;
+}
+
+.footer_menu_3 {
+    background-color: #2b4c99;
+}
+
+.footer_menu a {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    padding: 20px;
+}
+
+.footer_content {
+    display: flex;
+}
+
+footer .widget {
+    flex: 1;
+}
+
+footer .widget_title_text {
+    color: #fff;
+}
+
+
+.footer_menu_title {
+    font-size: 24px;
+}
+
+.footer_menu_desc {
+    font-size: 16px;
+    margin-top: 16px;
+}
+
+.footer_widget_text {
+    font-size: 16px;
+    color: #5c5c5c;
+    padding-bottom: 16px;
+}
+
+.widget_body_social {
+    margin-top: 16px;
+}
+
+.widget_body_social a {
+    text-decoration: none;
+    flex: 1;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.icon {
+    width: 32px;
+    height: 32px;
+    margin-right: 8px;
+}
+
+.widget_body_social strong {
+    text-transform: uppercase;
+}
+
+.specialties {
+    padding-left: 8px;
+}
+
+.widget_body_specialties ul{
+    font-size: 18px;
+    margin: 8px;
+    padding: 0px;
+    list-style: none;
+}
+
+.widget_body_specialties a {
+    text-decoration: none;
+    color: #ccc
+}
+
+.widget_body_specialties li {
+    margin-bottom: 16px;
+}
+
+.location1, .location2, .location3 {
+    color: #ccc;
+    font-size: 18px;
+    border-bottom: 1px solid #aaa;
+    padding-bottom: 8px;
+}
+
+.location1, .location2 {
+    margin-bottom: 24px;
+}
+
+.footer_copy {
+    color: #5c5c5c;
+    font-size: 16px;
+    border-top: 1px solid #5c5c5c;
+    margin-top: 16px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+
 }
