@@ -34,6 +34,16 @@ header {
     align-items: center;
 }
 
+
+.menu_mobile {
+    display: none;
+    width: 40px;
+    height: 40px;
+    margin-top: 40px;
+    margin-right: 20px;
+    margin-bottom: 40px;
+}
+
 nav ul, nav li {
     list-style: none;
     margin: 0px;
@@ -79,8 +89,6 @@ nav .active, nav a:hover {
 
 .banner_headline h1 {
     max-width: 400px;
-    margin: 0px;
-    padding: 0px;
     color: #ffffff;
     font-size: 56px;
     text-shadow: 0px 2px 0px #555;
@@ -88,8 +96,6 @@ nav .active, nav a:hover {
 
 .banner_headline h2 {
     max-width: 400px;
-    margin: 0px;
-    padding: 0px;
     padding-top: 24px;
     color: #ffffff;
     font-size: 24px;
@@ -190,7 +196,7 @@ nav .active, nav a:hover {
 }
 
 .widget_body {
-    margin-top: 24px;
+    margin-top: 0px;
 }
 
 .news_data {
@@ -249,7 +255,6 @@ article .news_comments {
     min-width: 120px;
     margin-top: 28px;
     margin-right: 8px;
-    margin-bottom: 0px;
 }
 
 .widget_departments_img {
@@ -446,4 +451,83 @@ footer .widget_title_text {
     padding-top: 8px;
     padding-bottom: 8px;
 
+}
+
+@media (max-width:932px) {
+    header {
+        height: auto;
+    }
+    
+    header .container {
+        flex-direction: row;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    #banner {
+        height: auto;
+    }
+
+    .banner_headline {
+        padding: 30px;
+    }
+
+    .banner_headline h1 {
+        font-size: 50px;
+        margin-bottom: 0px;
+    }
+
+    .banner_headline h2 {
+        font-size: 20px;
+        padding-top: 0px;
+        margin-bottom: 40px;
+    }
+
+    .banner_options {
+        height: auto;
+        flex-direction: column;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    #general section {
+        padding-left: 20px;
+    }
+
+    aside {
+        padding: 20px;
+    }
+
+    .widget_departments {
+        flex: 0;
+        margin-right: 28px;
+    }
+
+    .footer_menu {
+        flex-direction: column;
+    }
+
+    .footer_content {
+        flex-direction: column;
+    }
+
+    .footer_content, .footer_copy {
+        padding-left: 20px;
+    }
+
+    .menu_mobile {
+        display:block;
+    }
+
+    nav ul {
+        display: none;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+    }
 }

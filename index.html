@@ -16,6 +16,10 @@
 
             <div class="menu">
                 <nav>
+                    <div class="menu_mobile">
+                        <img src="assets/images/menu_icon.svg" alt="Ícone de menu">
+                    </div>
+
                     <ul>
                         <li> <a href="" class="active">Início</a> </li>
                         <li> <a href="">Blog</a> </li>
@@ -322,5 +326,17 @@
         </div>
     </div>
    </footer>
+
+   <script type="text/javascript">
+    onload = function() {
+        document.querySelector(".menu_mobile").addEventListener("click", function() {
+            if (document.querySelector(".menu nav ul").style.display=='flex') {
+                document.querySelector(".menu nav ul").style.display='none';
+            } else {
+                document.querySelector(".menu nav ul").style.display='flex';
+            }
+        });
+    };
+   </script>
 </body>
 </html>
